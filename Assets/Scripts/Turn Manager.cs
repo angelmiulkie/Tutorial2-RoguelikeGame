@@ -1,0 +1,16 @@
+using UnityEngine;
+
+public class TurnManager
+{
+    // Variables 
+    private int m_TurnCount;
+
+    public TurnManager() {
+        m_TurnCount = 1;
+    }
+
+    public void Tick() {
+        m_TurnCount += 1;
+        Debug.Log("Current Turn Count: " + m_TurnCount);
+    }
+}
